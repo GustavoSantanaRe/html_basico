@@ -1,46 +1,45 @@
-# Mini Desafio HTML Avançado - Portal de Notícias Tech 📱
-
-## 📋 Descrição do Desafio
-
-Você foi contratado para criar o site do **TechNews Today**, um portal de notícias sobre tecnologia. A página deve demonstrar conceitos avançados de HTML de forma compacta e funcional.
-
-## 🎯 Objetivo
-
-Criar uma página HTML de **no máximo 50 linhas** que apresente um portal de notícias moderno e bem estruturado.
-
-## 📝 Requisitos Principais
-
-### ✅ Elementos Essenciais
-- **Formulário:** Campo de busca ou newsletter simples (3-4 campos)
-- **Estrutura semântica:** Use pelo menos `<header>`, `<main>`, `<article>` e `<footer>`
-- **Multimídia:** Um vídeo OU áudio incorporado
-- **Elementos especiais:** Use `<details>`, caracteres especiais (&copy;, &rarr;) ou `<time>`
-- **Layout organizado:** Seções bem definidas com conteúdo relevante
-
-## 🔧 Especificações Técnicas
-
-- **Máximo:** 50 linhas de código HTML
-- **Usar:** HTML puro e semântico
-- **Incluir:** Os 5 elementos essenciais listados acima
-- **Tema:** Portal de notícias de tecnologia
-- **Foco:** Estrutura semântica e funcionalidade
-
-## 🏆 Critérios de Avaliação
-
-- ✅ Respeitar o limite de 50 linhas
-- ✅ Implementar os 5 elementos essenciais
-- ✅ Usar tags semânticas corretamente
-- ✅ Formulário funcional
-- ✅ Estrutura HTML válida e organizada
-
-## 💡 Dicas
-
-- Use `<article>` para notícias individuais
-- Formulário pode ser simples (email + botão)
-- Vídeo do YouTube via iframe é mais compacto
-- `<details>` é ótimo para FAQ ou "leia mais"
-- Aproveite caracteres especiais para setas e símbolos
-
----
-
-**Mostre suas habilidades avançadas em HTML! 💻**
+<!doctype html>
+<html lang="pt-br">
+</body>
+<head>
+  <meta charset="utf-8">
+  <title>TechNews Today</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>TechNews Today</h1>
+    <nav><a href="#">Início </a><a href="#">IA </a><a href="#">Mobile </a><a href="#">Reviews</a></nav>
+  </header>
+  <main>
+    <form><input type="search" placeholder="Buscar notícias…" name="q"><button>Buscar</button></form>
+    <article>
+      <h2>Novas APIs Web modernas</h2>
+      <p><time datetime="2025-08-21">21 ago 2025</time> — Ferramentas para performance e segurança.</p>
+      <details><summary>Leia mais &rarr;</summary><p>APIs prometem desempenho nativo em apps web.</p></details>
+    </article>
+    <iframe title="Vídeo CC sobre tecnologia"
+      src="https://www.youtube.com/embed/QspHexLngJA" allowfullscreen></iframe>
+    <article>
+      <h3>Browser suporta novos gráficos</h3>
+      <p>WebGPU acelera 3D no navegador.</p>
+    </article>
+    <article>
+      <h3>Robôs domésticos ganham espaço</h3>
+      <p>Modelos acessíveis tornam-se comuns no dia a dia.</p>
+    </article>
+    <section>
+      <h3>Assine nossa Newsletter</h3>
+      <form>
+        <input type="text" placeholder="Nome completo" required>
+        <input type="email" placeholder="Seu e-mail" required>
+        <select name="topico"><option>IA</option><option>Mobile</option><option>Gadgets</option></select>
+        <label><input type="checkbox"> Aceito receber novidades</label>
+        <button>Inscrever</button>
+      </form>
+    </section>
+  </main>
+  <footer><small>&copy; 2025 TechNews Today • contato@technews.today</small></footer>
+</body>
+</html>

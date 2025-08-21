@@ -1,9 +1,65 @@
-<!-- Desafio 2 digitação (Aqui) -->
- 
-<!-- Obs: Ler (10a_desafio.md) para orientações -->
-<!-- Imagem de como deve ficar pronto na pasta assets (desafio 2.jpg) -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Carol Captures</title>
+</head>
+<body>
 
-<!-- 📱 🚀 📺 📧 emojis para usar no projeto -->
+    <h1>📸 <strong>Carol Captures</strong></h1>
 
+    <nav>
+        <a href="#sobre">Sobre</a> |
+        <a href="#galeria">Galeria</a> |
+        <a href="#contato">Contato</a>
+    </nav>
+
+    <section id="sobre">
+        <h2>Sobre Carol</h2>
+        <p>Fotógrafa há <strong>8 anos</strong> especializada em <em>momentos únicos</em>.</p>
+        <blockquote>"A fotografia captura não apenas o que vemos, mas o que sentimos."</blockquote>
+    </section>
+
+    <section id="galeria">
+        <h2>Galeria</h2>
+        <img src="assets/gabriely-520664734-18520629676005641-7194743680821908220-n.avif" alt="Casamento 1" width="250" height="150">
+        <img src="assets/danilo-siqueira-54.jpg" alt="Casamento 2" width="250" height="150">
+        <img src="assets/images.jpg" alt="Casamento 3" width="250" height="150">
+    </section>
+
+    <section id="servicos">
+        <h2>Serviços</h2>
+        <ul>
+            <li><strong>Casamentos</strong> - R$ 1.200</li>
+            <li><strong>Retratos</strong> - R$ 350</li>
+            <li><strong>Eventos</strong> - R$ 600</li>
+        </ul>
+    </section>
+
+    <section id="contato">
+        <h2>Contato</h2>
+        <form>
+            <label>Nome: <input type="text" name="nome" required></label><br><br>
+            <label>Email: <input type="email" name="email" required></label><br><br>
+            <label>Evento:
+                <select name="evento">
+                    <option>Casamento</option>
+                    <option>Retrato</option>
+                    <option>Evento</option>
+                </select>
+            </label><br><br>
+            <label>Detalhes:<br>
+                <textarea name="detalhes" rows="4" cols="40"></textarea>
+            </label><br><br>
+            <button type="submit">Solicitar Orçamento</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2025 Luna Captures | <a href="caroline.silva.coelhoo@gmail.com">caroline.silva.coelhoo@gmail.com</a></p>
+    </footer>
+
+</body>
+</html>
 
 
